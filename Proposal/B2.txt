@@ -1,0 +1,81 @@
+1. Excellence, State-of-the-art and objectives 
+
+1.1 Structural Health Monitoring via GNSS
+
+Since the mid-1990, Global Navigation Satellite Systems (GNSS) have been used to 
+monitor dynamic deformation of structures such as long bridges, towers and tall 
+buildings, mainly to investigate structural vibrations induced by a wide variety 
+of sources (e.g. wind, temperature, traffic, etc). This process of implementing 
+damage detection and performance analysis strategies for engineering structures 
+are defined as Structural Health Monitoring (SHM) [Kaloop et al, 2017]. SHM 
+systems are utilized to analyze and predict the health state of structures 
+under unknown future environmental conditions.
+
+SHM via GNSS is mostly performed in complement to a series of in-situ sensors, 
+such as accelerometers, gyroscopes, etc . That is due to a series of limiting 
+factors, such as:
+  * limited accuracy of GNSS
+  * data sampling/acquisition rates
+  * obstacles in the surrounding area (such as tall buildings, antennas)  
+    especially for urban areas
+  * complicated and time consuming data analysis requirements
+
+With the constant advance in recent years in the field of GNSS, geodetic 
+monitoring systems are developed especially for structures’ monitoring. 
+According to [Im et al, 2013], GNSS currently represent the highest 
+advanced geodetic monitoring systems used to evaluate structures’ behavior.
+GNSS monitoring systems are improved to measure dynamic responses up to 50Hz 
+[Yi et al, 2013], hence enabling the monitoring of a wide range of structures, 
+such as dams, long- and short-span bridges, seismic evaluations, and tall 
+buildings.
+
+Using a real-time kinematic (RTK) approach, GNSS measurements can reach an 
+accuracy of a few centimeters (typically 1-5cm [Yi et al, 2013]), while recent  
+experiments conducted using the Precise Point Processing (PPP) approach have 
+also reported same levels of accuracy [Moschas et al, 2015].
+
+GNSS sampling frequency plays a dominant part in dynamic performance analysis. 
+Over the past few years, there was significant improvement in the development 
+of new methods and new hardware that increase the sampling frequency and signal 
+collection techniques. Currently, GNSS receivers can collect observations with 
+a sampling rate up to 100Hz. This fact raises the question of whether these 
+systems can be used to monitor stiff structures, especially bridges and cantilever 
+structures members with dominant frequencies greater than 3–4Hz, and dynamic 
+movements of the order of a few millimeters. Such short-span bridges represent 
+the majority of bridges on a global scale. Such structures represent a challenge 
+because the 100Hz GPS sampling rate is compatible with the accelerometers’ 
+sampling rate (100–200Hz) that are systematically used for structural analysis, 
+whereas 100Hz data make it possible to overcome any problem of aliasing in stiff 
+structures’ spectral data [Moschas et al 2014]. In addition, such data can 
+typically overcome the problem of loss of peaks or of amplitude amplification 
+[Moschas et al, 2015]. Very few studies have investigated experimentally the 
+noise characteristics of 100Hz GPS data. In addition, this technology has been 
+applied only in very few cases of relatively flexible structures (dominant 
+frequencies of approximately 1.5Hz).
+
+1.2 GNSS Monitoring Techniques
+
+There are two basic modes of operation for GNSS; Point Positioning (PP), where 
+the user utilizes the observations collected by a single receiver (or multiple 
+receivers individually) and differential/network positioning (DGPS) where 
+observations from multiple (at least two) receivers are combined and processed 
+together. Both techniques offer a series of advantages and pose disadvantages 
+and have been used for SHM. Typically, differential positioning offers improved 
+accuracy compared to point positioning, posing however serious processing 
+challenges and limitations (larger analysis requirements).
+
+With the advance in GNSS hardware and methodologies (e.g. Precise Point 
+Positioning), the two methods can now reach accuracies of a few centimeters, 
+depending however on a large set of factors (processing mode, error and noise 
+mitigation, environmental conditions, etc).
+
+Additionally, data processing can be performed in either real-time or 
+post-processing mode, for both PP and DGPS. Analysis in post-processing mode 
+can offer significant advantages, but is not always fit for SHM.
+
+While there are a few software packages that can perform high standard GNSS 
+analysis in post-processing mode (e.g. Bernese, GIPSY/OSASIS, Gamit --TODO refs here--), 
+there is a lack of tools when it comes to real-time processing. Normally, users 
+would resolve to the non-free, non-open source tools developed by GNSS receiver 
+manufacturers (e.g. [], []--TODO refs here--). These however, are usually 
+surveying oriented, thus posing limitations to SHM.
