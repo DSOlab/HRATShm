@@ -79,3 +79,93 @@ there is a lack of tools when it comes to real-time processing. Normally, users
 would resolve to the non-free, non-open source tools developed by GNSS receiver 
 manufacturers (e.g. [], []--TODO refs here--). These however, are usually 
 surveying oriented, thus posing limitations to SHM.
+
+1.3 Proposal objectives and challenges
+
+1.4 State-of-the-art & Innovation
+
+SHM by means of GNSS is a rapidly growing technology. Especially during the 
+last years, with the rapid advancement of GNSS hardware and methodologies, it 
+has started to attract the interest of a growing number of researchers around 
+the world. The limits of this technology are yet to be discovered.
+
+Within the framework of the current research project, we aim at exploring and 
+implementing state-of-the art technology, using innovative methods to surpass 
+current limitations. More specifically, we intend to address the following 
+issues:
+
+* Lack of Software
+  ----------------
+As stated above (--TODO where above?--), there is an apparent lack of software 
+when it comes to the specific needs of implementing an SHM platform via GNSS. 
+Most research groups have used packages and tools designed by receiver 
+manufacturing companies (e.g. --TODO refs here--), which however pose several 
+limitations, such as:
+  * non-free and non-open source software; that is users have to purchase these 
+  tools and are confined to their inherent methodologies, design and limitations. 
+  Due to copyright limitations, even sophisticated users cannot alter the 
+  software, to fit their specific needs.
+  * surveying oriented; receiver manufacturing companies usually design software 
+  packages aimed and oriented towards surveying needs. That means that precision 
+  and accuracy standards are not high enough to meet the demands of high-precision 
+  GNSS applications, such as SHM.
+  * not state-of-the-art methodologies; these software packages are developed 
+  to be user-friendly and reliable above all. Using and/or testing state-of-the-art 
+  techniques, algorithms and methodologies is not a design objective and is 
+  neglected in production code.
+
+High precision, scientific oriented GNSS processing software packages (Bernese, 
+GAMIT, GIPSY -- TODO refs here--) on the other hand, offer significant 
+advantages when it comes to state-of-the-art analysis techniques, but have 
+important drawbacks when it comes to implementing SHM related applications. 
+The dominant disadvantages are:
+
+  * no real-time analysis; such software tools are designed to perform 
+  post-processing data analysis. Users first collect/acquire the dataset and 
+  in a latter step "feed" the software using a batch processing mode. Real-time 
+  data streams cannot be handled, thus inhibiting real-time monitoring.
+  * no high-rate data analysis; most of the high-precision GNSS analysis tools, 
+  are designed with the main focus being the processing of static, 30 second 
+  data. With that being the main goal, analysis of high rate GNSS data (i.e. 
+  sampling rates higher than 5-10Hz) is either not feasible at all, or 
+  inefficient (--TODO check this a bit more--).
+  * no or inefficient RTK mode; as stated above, such software is oriented 
+  towards a post-processing static analysis. Hence processing data in RTK mode 
+  is usually inefficient, if offered at all
+  * not user-friendly; scientific, high precision software is aimed towards an 
+  educated audience, mostly scientists and researchers involved in GNSS analysis. 
+  SHM though, could be a field of study for researchers of various scientific 
+  backgrounds (e.g. civil engineers), not necessarily related to in-depth GNSS 
+  analysis techniques.
+
+* GNSS Analysis Current Problems and Limitations
+------------------------------------------------
+Analysis of high-rate GNSS data, especially for sampling rates higher than 5Hz, 
+poses a series of problems and challenges not yet fully understood. Due to the 
+fact that this technology became only recently available, a wide range of 
+scientific questions has risen and remains unanswered.
+
+Processing methodologies for the efficient handling of such high-rate datasets 
+are currently in a premature phase. We aim to address such questions and come 
+up with innovative solutions and propositions. More specifically, we aim at 
+studying:
+
+  * efficient, real-time GNSS analysis techniques, implementing modern, 
+  state-of-the-art data processing algorithms. Scientific computation methods 
+  are now mature enough to handle large volume data in ever decreasing response 
+  times. We intend to implement modern software design, using tools such as 
+  distributing processing and multi-threading, to test the limits of read-time, 
+  high-rate GNSS analysis.
+  * inherent observation correlation of high-rate data; observations collected 
+  at such high frequencies (>10Hz), are highly correlated, posing serious 
+  challenges in their analysis (high levels of redundancy and dependence, can 
+  lead to ill-formatted matrices)
+
+<-- high-rate limitations, 
+    observation correlation,
+    noise characteristics,
+    multipath effects,
+    PPP ambiguity resolution -->
+
+* Software Design for SHM
+-------------------------
