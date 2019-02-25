@@ -159,13 +159,37 @@ studying:
   * inherent observation correlation of high-rate data; observations collected 
   at such high frequencies (>10Hz), are highly correlated, posing serious 
   challenges in their analysis (high levels of redundancy and dependence, can 
-  lead to ill-formatted matrices)
-
-<-- high-rate limitations, 
-    observation correlation,
-    noise characteristics,
-    multipath effects,
-    PPP ambiguity resolution -->
+  lead to ill-formatted matrices). We intend to examine the issue in detail, 
+  proposing ways to handle correlation, select optimal data and analysis 
+  sampling rates (depending on the dynamic model under consideration, e.g. 
+  vibration frequency under study).
+  * noise characteristics of high frequency GNSS observations; this is a topic 
+  of great importance for the efficient and accurate processing of high-rate 
+  observations and their respective statistical analysis and evaluation. Recent 
+  studies have shown that error sources affect monitoring systems for both short 
+  and long monitoring times (e.g. [Moschas et al, 2013]); some researchers 
+  introduced methods that can be used to detect the behavior of structures using 
+  noise and error performances. For example, Peppa et al. [49] used the 
+  signal-to-noise ratio of GPS measurements to detect structures movements. 
+  Moreover, Souza and Negri [50] utilized the multipath effect to detect 
+  structure movements. Mitigation and/or modeling of errors and noise is of the 
+  highest importance in GNSS analysis, yet not fully understood and studied in 
+  the case of high-rate, high precision applications.
+  * multipath effects; this can be one of the main factors of precision 
+  degradation in GNSS-based SHM applications ([27,28]) and one of the errors 
+  hardest to model and mitigate efficiently. Especially in the case of SHM, 
+  where large structures are under consideration, multipath induced errors can 
+  cause severe loss of accuracy.
+  * PPP ambiguity resolution; in recent years, the PPP methodology is used in 
+  an ever growing number of applications. With the recent advances in GNSS 
+  technology, the precision offered by this algorithm is rapidly approximating 
+  the one reached by DGPS. Especially in real-time applications, where processing 
+  speed is of the highest importance, this methodology offers great advantages. 
+  However, these is still a limiting factor difficult to transcend and that is 
+  effective ambiguity resolution. Resolving ambiguities to whole cycles (integers) 
+  can improve GNSS positioning accuracy, but the integer character of ambiguities 
+  is lost in PPP (where in contrast to DGPS common errors between receiver/antenna 
+  pairs are not differenced out).
 
 * Software Design for SHM
 -------------------------
