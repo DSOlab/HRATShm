@@ -193,3 +193,20 @@ studying:
 
 * Software Design for SHM
 -------------------------
+Normally, GNSS based SHM platforms, follow a two-step approach; in a first step, 
+after of during GNSS data acquisition the dataset is processed to produce 
+position estimates. In a later, individual step, these estimates are either 
+compared to compute position differences (hence position dislocations) or are 
+stacked to time-series where from harmonic signals and/or velocity can be 
+identified and estimated. The latter option in performed in post-processing 
+mode. This approach has the following drawbacks:
+
+  * no SHM-specific software; position estimates are used, on a per-application 
+    basis, to produce differences or time-series
+  * no baseline approach; in DGPS mode, the primary analysis result is baseline 
+    vectors between two receiver/antenna pairs. Computing coordinates from 
+    baselines (via reference frame realization as performed in RTK) can result 
+    in accuracy degradation(--TODO. Refs here--)
+  * real-time time-series analysis; due to its complicated methodologies, 
+    time-series analysis is normally performed in post-processing mode
+    (--TODO refs here--).
