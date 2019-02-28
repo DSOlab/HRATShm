@@ -210,3 +210,44 @@ mode. This approach has the following drawbacks:
   * real-time time-series analysis; due to its complicated methodologies, 
     time-series analysis is normally performed in post-processing mode
     (--TODO refs here--).
+
+1.4 Scientific and/or social impact
+
+Our intention is for this proposal to have a pluralistic, multi-faceted impact 
+on the scientific community. Both via our technical approach (i.e. 
+state-of-the-art and innovative methodologies) and through the policy adopted 
+(i.e. free and open software), we aim at a gross impact on the scientific 
+community.
+
+Real-time GNSS processing is a fast growing technology, constantly pushed forward 
+in recent years by the advances in receiver technology, methodologies and global 
+satellite systems. Note that in the following years, GNSS such as Galileo, 
+BeiDou and IRNSS are expected to be expanded and/or fully operational and assist 
+further positioning and/or navigation applications. In the last few years, a 
+growing number of new methodologies is introduced, making use of high-rate 
+capabilities and multi-GNSS data, to enhance accuracy and response time of 
+analysis systems.
+
+We intend on putting a great number of these methodologies to the test and 
+provide vital feedback on their real-world efficiency and usability. This is of 
+great importance to the scientific community, as a number of these methodologies
+are only designed on a theoretical basis, or implemented individually (as opposed
+to being incorporated in an integrated processing suite). Their evaluation, via
+a "real-world" application, with strict demands on precision and resources, is
+of critical value to the scientific community.
+
+Innovative solutions are to be designed, tested and implemented where there is
+lack of methodologies/algorithms; new techniques will be developed and current
+approaches will be modified to fit the rigorous needs of a high-precision
+monitoring system. Results and conclusions are to be returned to the scientific
+comminity (via scientific papers and conference presentations).
+
+The software suit to be developed, will be under a free and open policy, thus
+freely disseminated and used by any interested party. Additionally, users will be
+able to alter the tool (source code), in any way they see fit, to comply to their
+specific needs. Hence, we expect that the proposal will have a long-lasting 
+impact, as new users use the software and/or methodologies in a divergent series
+of applications.
+
+Precise, real-time, high-rate positioning and monitoring can have a vast number 
+of applications. ...
