@@ -275,14 +275,19 @@ products (e.g. smart phone applications).
 
 2.1 Research Methodology
 
+<!--
+Θα το λέμε SHM software/analysis/processing ή time-series software/analysis/processing ??
+Processing unit ή computer ??
+ -->
+
 2.1.1 General Description
 
 +------------------------------------------------------------+
-|                    ----                                    |
+|                    ____                                    |
 | ____                /\                                     |
 |  /\                /  \                                    |
 | /  \   ____         |                                      |
-|  |      /\          |                ----                  |
+|  |      /\          |                ____                  |
 |  |     /  \         |                 /\                   |
 |  |       |____rtcm  |                /  \                  |
 | rtcm            |  rtcm                |                   |
@@ -300,5 +305,51 @@ products (e.g. smart phone applications).
 |                                                            |
 +------------------------------------------------------------+
 
+With the current proposal, we aim at designing and building a GNSS based SHM
+platform. This platform will be applicable in a wide variety of structures, with
+the only prerequisite being an as clear as possible horizon, so that the GNSS
+receivers can acquire satellite transmitted signals. The fundamental building
+blocks of the platform, are:
+  * one or more GNSS receiver/antenna pairs
+  * a software suite to process GNSS observations
+  * a software suite to analyze and visualize position or baseline dynamics
 
+The characteristics of the platform, will be:
+  * ability to use multi-GNSS observations (GPS, GLONASS, GALILEO)
+  * ability to use high-rate data (up to 100Hz)
+  * real-time data streaming, aquisition, processing and visualization
+  * high-precision, rigorous GNSS data processing
+  * ability to work in PP or network (DGPS) mode
+  * analysis of GNSS derived position/baseline time-series to study structure
+    dynamics
 
+The design of the platform includes one or more pairs of GNSS receiver/antenna pairs.
+These shall be installed on or near the structure to be monitored, in positions
+of interest. The receivers will collect and transmitt GNSS data, in real-time, via
+the internet to a central processing unit, that can be anywhere (not necessarily
+in the vicinity of the structure). This processing unit will be equiped with a
+GNSS processing software suite which will analyze the incoming data in real-time mode,
+and estimate position coordinates or baseline vectors (between receiver/antenna pairs).
+These estimates will in turn be fed to a time-series analysis software, installed
+on the same or a remote processing unit, where the results will be visualized and
+the dynamics analyzed.
+
+2.1.2 General Considerations
+
+The platform suggested is designed to be as versatile as possible. Users can
+exploit observations of multiple GNSS, or fall back to GPS-only data if the
+receivers are not of GNSS technology. Additionally, they can use PP or DGPS mode,
+depending on their needs; that means that only one receiver/antenna pair can be
+enough to monitor points of interest. The two fundamental software suits (GNSS processing 
+and SHM analysis) will be completely independent and it is not even mandatory 
+that they be installed on the same processing unit (e.g GNSS processing could be performed
+on a remote, high-capability processing unit, whereas the results could be visualized
+on a laptop at the vicinity of the structure).
+
+This design versatility enables the platform to be applicable or easily addaptable  
+to a wide variety of applications aside from SHM, e.g. real-time monitoring of
+crustal deformation (for earthquakes).
+
+2.1.3 The receiver/antenna part
+2.1.4 GNSS processing
+2.1.5 SHM analysis
