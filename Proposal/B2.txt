@@ -247,7 +247,10 @@ freely disseminated and used by any interested party. Additionally, users will b
 able to alter the tool (source code), in any way they see fit, to comply to their
 specific needs. Hence, we expect that the proposal will have a long-lasting 
 impact, as new users use the software and/or methodologies in a divergent series
-of applications.
+of applications. Our ambition is that the software developed in the framework
+of this project, will be a state-of-the-art, easy to use, veratile and robust
+GNSS positioning suite, that will become a popular, widely used tool within the 
+scientific community.
 
 Precise, real-time, high-rate positioning and monitoring can have a vast number 
 of applications, ranging from navigation to monitoring crustal deformation. The
@@ -258,5 +261,44 @@ and is continuing to claim a growing role in the fields of tectonics, seismology
 geophysics. Research teams around the world, are tryig to demistify pre-, co- 
 and post-seismic crustal behaviour by means of high-rate GNSS observations. Methodologies,
 algorithms and techniques used for SHM can be applicable in such studies, as
-both fields share the same set of rigorous demands; high-rate, high accuracy monitoring via GNSS.
-Additionally, since we 
+both fields share the same set of rigorous demands: high-rate, high accuracy 
+monitoring via GNSS. Hence, this proposal aspires to be a work of significant
+scientific impact in various fields of science and engineering, where precise GNSS
+positioning is used. Results, conclusions and innovative propositions can be 
+directly applied to an ever growing number of applications.
+
+Via the scientific community, the project can also have a social impact. Navigation
+and positioning applications are very popular and widely used by the public.
+State-of-the-art methodologies and tools (e.g. software libraries) introduced in 
+the current proposal, can find their way in public oriented, proprietary or not
+products (e.g. smart phone applications).
+
+2.1 Research Methodology
+
+2.1.1 General Description
+
++------------------------------------------------------------+
+|                    ----                                    |
+| ____                /\                                     |
+|  /\                /  \                                    |
+| /  \   ____         |                                      |
+|  |      /\          |                ----                  |
+|  |     /  \         |                 /\                   |
+|  |       |____rtcm  |                /  \                  |
+| rtcm            |  rtcm                |                   |
+|  |              |   |                  |                   |
+|  |              V   V                 rtcm                 |
+|  +-------------> +====+                |                   |
+|                  | A  | <--------------+       +====+      |
+|                  +====+ ---------------------> | B  |      |
+|                   ^ ^                          +====+      |
+|                   | |                                      |
+| >--rtcm orbit cor-+ +--rtcm clock cor--<                   |
+|                                                            |
+| A: Computer with GNSS processing suite                     |
+| B: Computer with SHM software suite                        |
+|                                                            |
++------------------------------------------------------------+
+
+
+
