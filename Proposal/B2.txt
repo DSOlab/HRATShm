@@ -250,4 +250,13 @@ impact, as new users use the software and/or methodologies in a divergent series
 of applications.
 
 Precise, real-time, high-rate positioning and monitoring can have a vast number 
-of applications. ...
+of applications, ranging from navigation to monitoring crustal deformation. The
+latter is a scientific field of great importance and 
+of primary interest in Greece, where earthquakes are very frequent. GPS/GNSS has 
+revolutionized seismic research (https://www.earthmagazine.org/article/precise-fault-how-gps-revolutionized-seismic-research --TODO make this a ref--)
+and is continuing to claim a growing role in the fields of tectonics, seismology and
+geophysics. Research teams around the world, are tryig to demistify pre-, co- 
+and post-seismic crustal behaviour by means of high-rate GNSS observations. Methodologies,
+algorithms and techniques used for SHM can be applicable in such studies, as
+both fields share the same set of rigorous demands; high-rate, high accuracy monitoring via GNSS.
+Additionally, since we 
