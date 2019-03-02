@@ -351,5 +351,52 @@ to a wide variety of applications aside from SHM, e.g. real-time monitoring of
 crustal deformation (for earthquakes).
 
 2.1.3 The receiver/antenna part
+Instrumentation of GNSS based platforms consists of one or more GNSS receiver/antenna pairs. 
+These are installed on points of interest on or near the structure under study. 
+For the proposed project, the receivers can have the following characteristics:
+  * can be GPS-only or multi-GNSS; the processing software will be able to analyze
+    GPS-only data or multi-GNSS if available
+  * data sampling rates of high frequencies; in SHM platforms data is collected
+    in high frequencies (typically over 5Hz), so that users can estimate high 
+    frequency dynamics
+  * RTCM streaming capability; real-time data streaming (from receivers to the
+    central processing unit where the GNSS software will be installed), will be
+    performed via internet and according to the RTCM standards. RTCM is a very
+    common format for such purposes and all receivers, even of old technology, can
+    transmit data using RTCM.
+
+All in all, for the platform to work, very scarce demands are made on receiver 
+technology. However, state-of-the-art technology (e.g. multi-GNSS, high-rate data) 
+are fully supported.
+
 2.1.4 GNSS processing
+The GNSS processing software suite, will have the following key features:
+  * acquire and decode trnasmitted data from the receiver(s)
+  * process the data using state-of-the-art methodologies; station coordinates or
+    baseline vectors will be estimated
+  * transmit data to SHM software
+All of the above steps will be performed in real-time, using an as efficient as
+possible toolchain.
+
+2.1.4.1 General Design
+C++
+Python
+UNIX compliant
+only free/open libs used
+OOP design, multi/thread
+open & free software
+
+2.1.4.2 GNSS processing
+PPP mode
+DGPS mode
+stat-of-the-art methodologies
+IGS standards
+PPP ambiguity resolution
+Kalman filtering - adaptive filters
+Noise properties - stochastic modeling
+GPS only
+GLONASS
+GALILEO
+real-time orbit & clock corrections
+
 2.1.5 SHM analysis
