@@ -379,24 +379,31 @@ All of the above steps will be performed in real-time, using an as efficient as
 possible toolchain.
 
 2.1.4.1 General Design
-C++
-Python
-UNIX compliant
-only free/open libs used
-OOP design, multi/thread
-open & free software
+Having efficiency and modern design in mind, the programming language of choice
+(for both the GNSS processing and the SHM suite) is C++. Python (programming language)
+will also be used for wrappers, bindings and scripts. Any library to be used, will
+strictly follow an open and free software policy. Care will be taken for the
+software to be fully POSIX compliant.
 
 2.1.4.2 GNSS processing
-PPP mode
-DGPS mode
-stat-of-the-art methodologies
-IGS standards
-PPP ambiguity resolution
-Kalman filtering - adaptive filters
-Noise properties - stochastic modeling
-GPS only
-GLONASS
-GALILEO
-real-time orbit & clock corrections
+The GNSS software suite will play the key part in the platform. It will receive the
+data streams from the receivers, process the data and in a final step transmit the
+analysis results. All of these steps will be performed in real-time.
+
+The input will consist of RTCM formated data, transmitted from the receivers; high-rate 
+GNSS data streams (up to 100Hz) will be fully supported. Satellite signals from GPS-only 
+or multi-GNSS (GPS, GLONASS and GALILEO) receivers will be handled by the suite. 
+Additionally, real-time product/correction streams (i.e. satellite orbit and clock 
+corrections) could be used as input to improve postitioning accuracy. The software 
+will also support a series of GNSS standards (e.g. ANTEX, IONEX), defined and maintained 
+by the International GNSS Service (IGS), to assist the analysis.
+
+Users will be able to choose between a PPP and a network (DGPS) approach, depending on
+the application at hand. State-of-the-art methodologies will be implemented for both
+approaches. The pillars of the software desing will be efficiency and precission. We
+are going to test and evaluate bleading edge methodologies and design and implement 
+new approaches, methods and algorithms where needed. State-of-the-art models for 
+error mitigation will be applied and efficient, robust filtering techniques will be
+implemented for precise estimation.
 
 2.1.5 SHM analysis
