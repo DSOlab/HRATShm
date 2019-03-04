@@ -82,6 +82,34 @@ surveying oriented, thus posing limitations to SHM.
 
 1.3 Proposal objectives and challenges
 
+The proposal objectives are twofold; on the one hand to produce a state-of-the-art 
+GNSS-based SHM platform, thus making an impact on the scientific community and on the
+other hand, to offer the ability to a young reasearch team to tackle a bleading-edge 
+scientific challenge, thus boosting their expertise and career prospects.
+
+The main aim of the proposal, is to design and implement a robust and adaptable GNSS processing 
+software suite, that will act as a state-of-the-art positioning toolset, not only for SHM
+but for a series of high-precision applications and new scietific challenges. We mean for
+the software to become a widely used, highy appreciated scientific tool. To this end, we will 
+tackle the following challenges:
+ * support real-time analysis 
+ * support high-rate GNSS data
+ * test, evaluate and implement state-of-the-art methodologies
+ * engineer robust yet adaptable software design
+
+We also intend on testing and expanding the limits of GNSS positioning methodologies.
+SHM poses strict, rigorous precesion demands, that have to be met in real-time. Via 
+this proposal, we aim at testing the current limits of real-time GNSS positioning 
+methodologies and provide new, innovative and efficient solutions where these seem to 
+be inadequate.
+
+The research team to undertake this proposal is made up of young scientists. Taking up
+such a challenging task, will have a huge impact on their careers and prospects. First 
+and foremost, securing a grant will enable them to stay in Greece and work in one of
+the country's top academic facilities. Tackling a state-of-the-art scientific challenge,
+will also strengthen their expertise and contribution to scholarship, boost their 
+carrier perspectives and the int turn boost the country's human resources in academia. 
+
 1.4 State-of-the-art & Innovation
 
 SHM by means of GNSS is a rapidly growing technology. Especially during the 
@@ -407,3 +435,27 @@ error mitigation will be applied and efficient, robust filtering techniques will
 implemented for precise estimation.
 
 2.1.5 SHM analysis
+Currently, there is a lack of SHM-specific software, utilizing GNSS-based data and products.
+We plan on designing and implementing a robust, efficient and responsive software tool, that
+will use GNSS analysis results and products (time-series of coordinate estimates and/or 
+baseline vectors with their respective statics) to identify, characterize and model 
+structure dynamics.
+
+The SHM software suite will be independent of the GNSS processing software suite; it won't
+be needed for the two tools to be installed on the same processing unit, as they will be 
+able to communicate via the internet, in real-time. The SHM software will serve two main goals:
+  * visualize the estimates (time-series) derived from GNSS processing and
+  * model structure dynamics
+
+State-of-the-art software design patterns and programming libraries will be used to 
+make the software as efficient as possible, able to handle huge data flows in real-time.
+Visualizing the processing estimates is of crucial importance in SHM platforms, so that
+users can have a clear view of the structure dynamics.
+
+The bulk of the work here, will be dedicated to designing, implementing and testing 
+bleading edge and innovative methodologies and algorithms to analyze time-series in
+a responsive and efficient manner. Identification of small, even subtle movements of the 
+reference points and harmonic analysis (to study possible structure vibrations) will 
+be a core feature of the suite.
+
+2.3 Research Team
